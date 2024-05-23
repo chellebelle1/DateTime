@@ -1,0 +1,60 @@
+---
+title: "DateTime-Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{DateTime-Vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+This is a user guide for the `DateTime` package, which allows you to perform operations or calculations with date and time. See this guide for explanations and examples of the functions in this package. 
+
+### Installation
+To use the `DateTime` package, use the code below in your console. 
+
+```{r setup, eval=TRUE, echo=TRUE}
+# Use package devtools 
+install.packages("DateTime")
+
+# Load the DateTime package in 
+library(DateTime)
+```
+
+### Fuctions of the package 
+The package contains 4 functions which are related to date and time. 
+
+- `date_difference()`
+
+- `add_time()`
+
+- `is_same_day()`
+
+- `is_dutch_holiday()`
+
+
+#### Calculating date difference 
+The `date_difference()` function allows you to calculate the difference between two dates. The function uses various time units such as seconds, minutes, hours, days, weeks, months, and years.
+
+```{r, date_difference, echo=TRUE, eval=TRUE}
+# Load the DateTime package
+library(DateTime)
+
+# Calculate the difference between two dates in days
+time_difference("2024-05-21", "2024-05-22", units = "days")
+
+# Calculate the difference between two dates in weeks
+time_difference("2024-05-21", "2024-06-21", units = "weeks")
+
+# Calculate the difference between two dates in years
+time_difference("2024-05-21", "2025-05-21", units = "years")
+
+```
+
