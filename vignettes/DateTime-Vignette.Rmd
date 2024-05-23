@@ -21,8 +21,9 @@ This is a user guide for the `DateTime` package, which allows you to perform ope
 To use the `DateTime` package, use the code below in your console. 
 
 ```{r setup, eval=TRUE, echo=TRUE}
-# Use package devtools 
-install.packages("DateTime")
+# install packages "usethis" and "devtools" if they are not already installed 
+library(usethis)
+library(devtools)
 
 # Load the DateTime package in 
 library(DateTime)
@@ -48,13 +49,65 @@ The `date_difference()` function allows you to calculate the difference between 
 library(DateTime)
 
 # Calculate the difference between two dates in days
-time_difference("2024-05-21", "2024-05-22", units = "days")
-
+date_difference("2024-05-21", "2024-05-22", units = "days")
 # Calculate the difference between two dates in weeks
-time_difference("2024-05-21", "2024-06-21", units = "weeks")
-
+date_difference("2024-05-21", "2024-06-21", units = "weeks")
 # Calculate the difference between two dates in years
-time_difference("2024-05-21", "2025-05-21", units = "years")
+date_difference("2024-05-21", "2025-05-22", units = "years")
 
 ```
 
+#### Add time to a date 
+The `add_time()` function adds a certain amount of time to the filled in date. 
+```{r, add_time, eval=TRUE, echo=TRUE}
+# Add 1 hour
+add_time("2024-05-21 08:00:00", 1, "hours") 
+# Add 2 weeks 
+add_time("2024-07-22 07:00:00", 2, "weeks") 
+# Add 54 seconds
+add_time("2024-05-21 08:00:00", 54, "seconds") 
+```
+
+#### Check if two dates are on the same day
+The `is_same_day()` function checks whether two dates fall on the same weekday. If so, it returns "TRUE" and gives the name of the weekday. If not, it returns "FALSE" and gives you the two different weekday names. 
+
+```{r, same day, eval=TRUE, echo=TRUE}
+# Check if the 21st of May 2024 falls on the same day as 21st of May 2024. 
+is_same_day("2024-05-21", "2024-05-21")
+# Check if the 4th of May 2024 falls on the same day as the 2nd of February 2024
+is_same_day("2024-05-04", "2024-02-02")
+```
+
+#### Check for Dutch holidays
+The `is_dutch_holiday()` function checks if the given date, is also a (legal) Dutch holiday. 
+These holidays are:
+
+- New Year's Day
+
+- Goede Vrijdag / Good Friday
+
+- Easter
+
+- Second Easter Day
+
+- King's Day
+
+- Liberation Day (every 5 years)
+
+- Ascension Day
+
+- Pentecost
+
+- Second Pentecost
+
+- Christmas Day
+
+- Second Christmas Day
+
+```{r, Dutch holiday, eval=TRUE, echo=TRUE}
+is_dutch_holiday("2024-01-01")
+is_dutch_holiday("2024-08-12")
+```
+
+### Contact 
+For questions or suggestions, contact the author at rachelle_b@hotmail.nl
