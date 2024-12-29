@@ -10,7 +10,7 @@ devtools::install_github("your_username/DateTime")
 
 ### The package contains 4 functions which are related to date and time.
 
-- `date_difference()``: allows you to calculate the difference between two dates. The function uses various time units such as seconds, minutes, hours, days, weeks, months, and years.
+- `date_difference()`: allows you to calculate the difference between two dates. The function uses various time units such as seconds, minutes, hours, days, weeks, months, and years.
 
 - `add_time()`: adds a certain amount of time to the date of your choice.
 
