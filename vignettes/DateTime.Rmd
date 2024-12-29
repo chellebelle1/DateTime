@@ -1,5 +1,5 @@
 ---
-title: "DateTime-Vignette"
+title: "DateTime"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{DateTime-Vignette}

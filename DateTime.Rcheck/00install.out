@@ -1,0 +1,14 @@
+* installing *source* package 'DateTime' ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning in file.rename(instdir, final_instdir) :
+  cannot rename file 'C:/Users/rache/OneDrive/Documenten/DateTime/DateTime.Rcheck/00LOCK-DateTime/00new/DateTime' to 'C:/Users/rache/OneDrive/Documenten/DateTime/DateTime.Rcheck/DateTime', reason 'Toegang geweigerd'
+ERROR:    moving to final location failed
+* removing 'C:/Users/rache/OneDrive/Documenten/DateTime/DateTime.Rcheck/DateTime'

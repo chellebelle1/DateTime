@@ -1,0 +1,16 @@
+Package: DateTime
+Title: Change Time
+Version: 0.0.0.9000
+Authors@R: 
+    person("Rachelle", "Balgit", , "rachelle_b@hotmail.nl", role = c("aut", "cre"))
+Description: Make simple calculations with date and time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Suggests: knitr, rmarkdown, devtools, usethis
+VignetteBuilder: knitr
+NeedsCompilation: no
+Packaged: 2024-12-29 13:55:45 UTC; rache
+Author: Rachelle Balgit [aut, cre]
+Maintainer: Rachelle Balgit <rachelle_b@hotmail.nl>
