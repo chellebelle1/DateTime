@@ -1,3 +1,6 @@
 ^DateTime\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^CRAN-SUBMISSION$
+^doc$
+^Meta$

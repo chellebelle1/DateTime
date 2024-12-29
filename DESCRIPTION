@@ -14,3 +14,4 @@ Suggests:
     devtools,
     usethis
 VignetteBuilder: knitr
+
