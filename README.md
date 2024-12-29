@@ -17,3 +17,6 @@ devtools::install_github("your_username/DateTime")
 - `is_same_day()`: checks whether two dates fall on the same weekday. If so, it returns “TRUE” and gives the name of the weekday. If not, it returns “FALSE” and gives you the two different weekday names.
 
 - `is_dutch_holiday()`: checks if the given date, is also a (legal) Dutch holiday. These holidays are: New Year's Day, Good Friday, Easter, Second Easter Day, King's Day, Liberation Day (every 5 years), Ascension Day, Pentecost, Second Pentecost, Christmas and Second Christmas Day.
+
+#### Licence
+This package is licensed under the MIT License. See the `LICENCE` file for details.
